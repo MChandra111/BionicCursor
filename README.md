@@ -18,12 +18,4 @@ Cursor plugin that implements **Bionic Reading** for Agent Chat by instructing t
 - The rule `rules/bionic-reading.mdc` is set to `alwaysApply: true`.
 - To disable it, change `alwaysApply` to `false` (or remove the file from the plugin).
 
-## Included
-
-- `rules/`: Bionic Reading rule + baseline coding/review rules
-- `skills/code-reviewer/`: code review skill
-- `agents/`: security reviewer agent
-- `commands/`: deploy-staging command
-- `hooks/hooks.json`: hook definitions
-- `scripts/`: hook script placeholders
-- `mcp.json`: MCP server config
+## Submitted to marketplace, should be public soon ^^
