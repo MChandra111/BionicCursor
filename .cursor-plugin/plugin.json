@@ -1,0 +1,17 @@
+{
+  "name": "bionic-cursor",
+  "displayName": "Bionic Cursor",
+  "version": "0.1.0",
+  "description": "Bionic Reading in Cursor",
+  "author": {
+    "name": "MChandra111",
+    "email": "hey@mchandra.dev"
+  },
+  "logo": "assets/logo.svg",
+  "rules": "rules/",
+  "commands": "commands/",
+  "agents": "agents/",
+  "skills": "skills/",
+  "hooks": "hooks/hooks.json",
+  "mcpServers": "mcp.json"
+}

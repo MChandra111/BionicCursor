@@ -1,0 +1,21 @@
+---
+description: Render assistant prose in Bionic Reading style (bold prefixes) for faster skimming.
+alwaysApply: true
+---
+
+bionic-reading:
+
+- Apply **Bionic Reading** styling to all assistant messages intended for human reading (normal prose in Agent Chat).
+- Styling rule: for each natural-language word, **bold the first ~40%** (minimum 1 character, maximum 4 characters), then leave the remainder unbolded.
+  - Examples:
+    - `**Bion**ic **Read**ing **impr**oves **scan**ning`
+    - `**Plea**se **summ**arize **thes**e **poin**ts`
+- Preserve meaning and punctuation. Keep original whitespace as much as reasonable.
+- Do **not** apply Bionic styling inside:
+  - fenced code blocks (```...```)
+  - inline code (single backticks)
+  - file paths, URLs, emails, command lines, or identifiers (treat anything containing `/`, `\`, `.`, `@`, `_`, `-`, `:` as “verbatim-ish” unless clearly plain English)
+  - JSON/YAML/TOML snippets, stack traces, or logs
+  - tables (Markdown tables often become unreadable when bolded)
+- If a message is primarily code/commands/config, **skip** Bionic styling entirely for that message.
+- If bolding would reduce readability (very short words, dense technical acronyms), prefer leaving the word unstyled.
